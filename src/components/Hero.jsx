@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <section className="bg-primary text-white flex flex-col md:flex-row items-center md:items-stretch">
+    <section className="bg-gradient-to-r from-primary to-blue-800 text-white flex flex-col md:flex-row items-center md:items-stretch">
       {/* Left Side: Text Content */}
       <div className="md:w-1/2 flex flex-col justify-center items-center text-center p-8">
         <h1 className="text-3xl md:text-4xl font-bold mb-2">Welcome to</h1>

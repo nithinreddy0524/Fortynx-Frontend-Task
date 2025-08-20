@@ -26,7 +26,7 @@ const Navbar = () => {
       )}
 
       <nav className="bg-primary flex justify-center items-center text-white sticky top-0 z-50 shadow-lg">
-        <div className="container px-5 md:gap-24 text-center w-full py-4 flex justify-between items-center">
+        <div className="container px-5 lg:gap-24 text-center w-full py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <NavLink to="/" className="flex items-center space-x-3">
               <img src="/logo.png" alt="Logo" className="h-6 w-7 bg-white rounded object-cover" />
@@ -40,8 +40,8 @@ const Navbar = () => {
             <NavLink to="/academics" className="hover:text-accent text-white" onClick={() => window.scrollTo(0, 0)}>Academics</NavLink>
             <NavLink to="/admissions" className="hover:text-accent text-white" onClick={() => window.scrollTo(0, 0)}>Admissions</NavLink>
             <NavLink to="/faculty" className="hover:text-accent text-white" onClick={() => window.scrollTo(0, 0)}>Faculty</NavLink>
-            {location==="/" && <Link to="contact-us" smooth={true} duration={500} className="hover:text-accent text-white cursor-pointer">Contact Us</Link>}
-            {location!=="/" && <NavLink to="/" className="hover:text-accent text-white" onClick={() => window.scrollTo(0, 0)}>Contact Us</NavLink>}
+            {location==="/" && <Link to="contact-us" smooth={true} duration={500} className="md:hidden lg:block hover:text-accent text-white cursor-pointer">Contact Us</Link>}
+            {location!=="/" && <NavLink to="/" className="md:hidden lg:block hover:text-accent text-white" onClick={() => window.scrollTo(0, 0)}>Contact Us</NavLink>}
           </div>
           <div className="md:hidden">
             <button 
